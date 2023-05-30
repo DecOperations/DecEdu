@@ -85,6 +85,9 @@ Testnet -> Environment where realtime test contracts, tools, tokens and dapps op
 Token - NFT or FT is a non fungible smart contract based on mapped values to accounts on the ethereum plockchain
 
 
+Turing Complete - **A computational system that can compute every Turing- computable function** is **called Turing-complete (or** Turing-powerful)
+Scope & Permissions - Public and private Functions
+
 
 
 Tooling
@@ -105,8 +108,14 @@ Ethers
 [ Chainlink Documentation](https://docs.chain.link/) -> General functions,  Blockchain Oracles for Connected Smart Contracts
 [crytic/evm-opcodes](https://github.com/crytic/evm-opcodes) -Ethereum OpCodes - Ethereum opcodes and instruction reference.
 
-Turing Complete - **A computational system that can compute every Turing- computable function** is **called Turing-complete (or** Turing-powerful)
-Scope & Permissions - Public and private Functions
+Tools:
+[Alchemy](https://alchemy.com/?r=e17e6ebd4cbbb1be) - Node Endpoint creation 
+[Tenderly | Ethereum Development Platform](https://tenderly.co/) - Smart Contract GUI FULL FEATURED
+[Etherscan](https://etherscan.io/) - Endpoint 
+
+Simulations ->
+[ETH.Build - Educational Sandbox For Web3](https://eth.build/)
+
 
 Pragma (Version)
 
@@ -124,3 +133,13 @@ Standard vs. Defacto Standard -> Essentially while some things arent included in
 
 
 Steps for deployment
+
+ - Setup Dev Environment with Hardhat
+ - create new hardhat project
+ - Configure .env with your api keys
+ - write deploy script
+ - compile contract after improting from openzeppelin wizard
+ - deploy to testnet
+ - deploy to mainnet 
+ - migrate to etherscan
+ - Done!
