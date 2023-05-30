@@ -200,3 +200,59 @@ Steps for Deployment
  - Deploy to mainnet 
  - Migrate to etherscan
  - Done!
+
+
+> 👷 Welcome to Hardhat v2.9.9 👷‍ 
+> ? What do you want to do? …   
+> Create a JavaScript project 
+> ❯ Create a TypeScript project   
+> Create an empty
+> hardhat.config.js   
+> Quit
+
+  3. Select the option Create a TypeScript Project and hit enter!
+  4. From here we need to install a few dependencies and configure our .env file, using a few api keys but first we are going to look at the file structure:
+  > contracts/ 
+  > scripts/ 
+  > test/ 
+  > hardhat.config.js
+
+
+ 
+Currently there  is no .env or checking its good practice to add these and avoid any issues with publishing private keys. Perform a `touch .env` to generate the .env file in the root directory to ensure we have our variables protected, i also like to check .gitignore has included this to be safe!
+
+5.  Also now you should Consider installing VSCode extensions for solidity, hardhat, [Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode/docs/overview), [prettier-solidity/prettier-plugin-solidity](https://github.com/prettier-solidity/prettier-plugin-solidity) using the link.
+Tutorials:
+[Hardhat for Visual Studio Code | Ethereum development environment for professionals by Nomic Foundation](https://hardhat.org/hardhat-vscode/docs/overview)
+[Formatting | Ethereum development environment for professionals by Nomic Foundation (hardhat.org)](https://hardhat.org/hardhat-vscode/docs/formatting)
+
+6. go ahead and install the following 
+> use the tutorial if necessary
+`pnpm add -D @nomiclabs/hardhat-ethers ethers # peer dependencies`
+and then register the plugins in the `hadhat.config.js`
+8. Create a file in the contracts folder
+```
+// contracts/Box.sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Box {
+    uint256 private _value;
+
+    // Emitted when the stored value changes
+    event ValueChanged(uint256 value);
+
+    // Stores a new value in the contract
+    function store(uint256 value) public {
+        _value = value;
+        emit ValueChanged(value);
+    }
+
+    // Reads the last stored value
+    function retrieve() public view returns (uint256) {
+        return _value;
+    }
+    
+}
+```
+
