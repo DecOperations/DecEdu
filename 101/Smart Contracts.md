@@ -12,6 +12,7 @@ Hi! Welcome to DOTPI or the Developer Onboarding Training and Placement Initiati
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
+____
 What is a smart contract?
 
 Any code deployed on blockchains (broad use),
