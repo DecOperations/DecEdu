@@ -22,6 +22,7 @@ Common Public Definition (likely inaccurate) from Kraken Exchange website:
 
 -  Smart contracts are self-executing contracts defined by computer code, most recognizable in the form of applications built on platforms such as the Ethereum blockchain.
 
+___
 Common Attacks
 
 1. Overflow Attacks: Overflow occurs when a mathematical operation results in a value larger than the maximum limit allowed by the data type. In the context of Ethereum smart contracts, an overflow attack can happen when an attacker manipulates the arithmetic operations within a contract to generate unexpected values, potentially leading to unintended consequences or vulnerabilities.
@@ -58,12 +59,12 @@ Common Attacks
 
 It's worth noting that new types of attacks may emerge as the Ethereum ecosystem evolves. Staying informed about the latest security practices, participating in security audits, and regularly updating your smart contract code is the industry standard!
 
-
+___
 Types of Contracts
 
 NFTs, Fungibles, Services, On/Off-Chain Oracles, Governance, Voting, Time Locks, Storage, Multi-Signature Wallets, and TCRs, 
 
-
+****
 Standards -
 
 
