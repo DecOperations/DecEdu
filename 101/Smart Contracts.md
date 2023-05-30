@@ -72,7 +72,7 @@ EIP vs. ERC
 
 EIP -> Ethereum Improvement Proposal
 ERC -> Ethereum Request for Comment
- 
+____
 Common Standards ->
 
 ERC-20 -> Fungible Standard -> Think Water
@@ -83,7 +83,7 @@ ERC-1155 - Multi-Token Standard combines 721 and 20 into 1 can be used for thing
 
 EIP - Wallet signing
 
-
+_____
 Terms - 
 
 Audit -> Companies like [Certik](https://www.certik.com/), [OpenZeppelin](https://www.openzeppelin.com/), & [ConsenSys Diligence](https://consensys.net/diligence/), do a extensive review and evaluations vulnerabilities to peer review the code and dependencies, data inputs, user functions etc. to give a second signoff to communities and management typically.
@@ -107,7 +107,7 @@ Token - NFT or FT is a non fungible smart contract based on mapped values to acc
 Turing Complete - **A computational system that can compute every Turing- computable function** is **called Turing-complete (or** Turing-powerful)
 Scope & Permissions - Public and private Functions
 
-
+___
 
 Tooling
 
@@ -154,12 +154,12 @@ Simulations ->
 
 
 Pragma (Version)
-
+____
 General Rules - 
 A. No public user defined inputs when posible
 B.
 
-
+____
 Static vs. Upgradable =>
 
 Static - Unchangable deployed smart contract.
@@ -170,8 +170,8 @@ Standard vs. Defacto Standard ->
 
 Essentially while some things arent included into the standard (eg. ERC-20) they may have been added to a "defacto" standard which means a best practice or adopted for convivence while not necessary for the standard.
 
-
-Steps for deployment
+_____
+Steps for Deployment
 
  - Setup Dev Environment with Hardhat
  - Create new Hardhat project
