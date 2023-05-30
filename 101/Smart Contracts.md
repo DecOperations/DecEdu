@@ -13,12 +13,15 @@ Hi! Welcome to DOTPI or the Developer Onboarding Training and Placement Initiati
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 What is a smart contract?
-any code deployed on blockchains (broad use),
-in general more accurately defined as **finite state machines**, 
+
+Any code deployed on blockchains (broad use),
+in general more accurately defined as **finite state machines**
 
 Common Public Definition (likely inaccurate) from Kraken Exchange website:
 
 -  Smart contracts are self-executing contracts defined by computer code, most recognizable in the form of applications built on platforms such as the Ethereum blockchain.
+
+Common Attacks
 
 1. Overflow Attacks: Overflow occurs when a mathematical operation results in a value larger than the maximum limit allowed by the data type. In the context of Ethereum smart contracts, an overflow attack can happen when an attacker manipulates the arithmetic operations within a contract to generate unexpected values, potentially leading to unintended consequences or vulnerabilities.
 
@@ -54,36 +57,50 @@ Common Public Definition (likely inaccurate) from Kraken Exchange website:
 
 It's worth noting that new types of attacks may emerge as the Ethereum ecosystem evolves. Staying informed about the latest security practices, participating in security audits, and regularly updating your smart contract code is the industry standard!
 
+
 Types of Contracts
+
 NFTs, Fungibles, Services, On/Off-Chain Oracles, Governance, Voting, Time Locks, Storage, Multi-Signature Wallets, and TCRs, 
 
+
 Standards -
+
+
 EIP vs. ERC
 
 EIP -> Ethereum Improvement Proposal
 ERC -> Ethereum Request for Comment
  
-Common standards ->
+Common Standards ->
+
 ERC-20 -> Fungible Standard -> Think Water
+
 ERC-721 - NFT standard  -> Think Snowflake
-ERC-1155 - Multi-Token Standard combines 721 and 20 into 1 can be used for things such as in game items -> In game might look like Item category of Currency (NFT type), Gold (type Erc-20), Silver (Currency ERC-20) ,
+
+ERC-1155 - Multi-Token Standard combines 721 and 20 into 1 can be used for things such as in game items -> In game might look like Item category of Currency (NFT type), Gold (type Erc-20), Silver (Currency ERC-20)
+
 EIP - Wallet signing
 
+
 Terms - 
+
 Audit -> Companies like [Certik](https://www.certik.com/), [OpenZeppelin](https://www.openzeppelin.com/), & [ConsenSys Diligence](https://consensys.net/diligence/), do a extensive review and evaluations vulnerabilities to peer review the code and dependencies, data inputs, user functions etc. to give a second signoff to communities and management typically.
 
-Internal vs External Transactions -> Smart contract vs user initiated actions on blockchain.
+Block -> List of txs processed and added to ledger in sequence hence a chain of blocks blockchain
+
+dApp -> Decentralized application
 
 Explorer -> Shows info about blockchain tx
 
 Hash -> Cryptographic generated value (usually by signed message SIWE)
 
-Block -> List of txs processed and added to ledger in sequence hence a chain of blocks blockchain
+Initialization - Loading variables that remain static into the solidity code on deployment.
+
+Internal vs External Transactions -> Smart contract vs user initiated actions on blockchain.
 
 Testnet -> Environment where realtime test contracts, tools, tokens and dapps operate at no cost for Q&A (typically pre launch)
 
 Token - NFT or FT is a non fungible smart contract based on mapped values to accounts on the ethereum plockchain
-
 
 Turing Complete - **A computational system that can compute every Turing- computable function** is **called Turing-complete (or** Turing-powerful)
 Scope & Permissions - Public and private Functions
@@ -91,55 +108,75 @@ Scope & Permissions - Public and private Functions
 
 
 Tooling
+
+
 Web Environments
+
 [Remix](https://remix.ethereum.org/) - Web based solidity/Ethereum IDE
 
 
 CLIs -
+
 Hardhat -  [Hardhat | Ethereum development environment for professionals by Nomic Foundation](https://hardhat.org/)
+
 Foundry - [Introduction - Foundry Book (getfoundry.sh)](https://book.getfoundry.sh/) 
 
-Packages & Tools
-Ethers
-[OpenZeppelin](https://www.openzeppelin.com/) - 
-[OpenZeppelin | Defender](https://www.openzeppelin.com/defender) - 
+
+Packages & Tools:
+
+[OpenZeppelin](https://www.openzeppelin.com/) - Provides security products to build, automate, and operate dApps
+
+[OpenZeppelin | Defender](https://www.openzeppelin.com/defender) - Secure operations platform for smart contracts
+
 [Safe – Previously Gnosis Safe ](https://safe.global/) - Crypto wallet, web3 account abstraction developer stack
+
 [OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/) - Audited premade boilerplate contract generator
-[ Chainlink Documentation](https://docs.chain.link/) -> General functions,  Blockchain Oracles for Connected Smart Contracts
-[crytic/evm-opcodes](https://github.com/crytic/evm-opcodes) -Ethereum OpCodes - Ethereum opcodes and instruction reference.
+
+[Chainlink Documentation](https://docs.chain.link/) -> General functions, Blockchain Oracles for Connected Smart Contracts
+
+[Crytic/evm-opcodes](https://github.com/crytic/evm-opcodes) -Ethereum OpCodes - Ethereum opcodes and instruction reference.
+
 
 Tools:
+
 [Alchemy](https://alchemy.com/?r=e17e6ebd4cbbb1be) - Node Endpoint creation 
+
 [Tenderly | Ethereum Development Platform](https://tenderly.co/) - Smart Contract GUI FULL FEATURED
+
 [Etherscan](https://etherscan.io/) - Endpoint 
 
+
 Simulations ->
+
 [ETH.Build - Educational Sandbox For Web3](https://eth.build/)
 
 
 Pragma (Version)
 
-Initialization - Loading variables that remain static into the solidity code on deployment.
-
 General Rules - 
 A. No public user defined inputs when posible
 B.
 
+
 Static vs. Upgradable =>
+
 Static - Unchangable deployed smart contract.
+
 Upgradable - Changeable through a Proxy contract: 2 types UUPS and Transparent
 
-Standard vs. Defacto Standard -> Essentially while some things arent included into the standard (eg. ERC-20) they may have been added to a "defacto" standard which means a best practice or adopted for convivence while not necessary for the standard.
+Standard vs. Defacto Standard -> 
+
+Essentially while some things arent included into the standard (eg. ERC-20) they may have been added to a "defacto" standard which means a best practice or adopted for convivence while not necessary for the standard.
 
 
 Steps for deployment
 
  - Setup Dev Environment with Hardhat
- - create new hardhat project
- - Configure .env with your api keys
- - write deploy script
- - compile contract after improting from openzeppelin wizard
- - deploy to testnet
- - deploy to mainnet 
- - migrate to etherscan
+ - Create new Hardhat project
+ - Configure .env with your API keys
+ - Write deploy script
+ - Compile contract after importing from OpenZeppelin Wizard
+ - Deploy to testnet
+ - Deploy to mainnet 
+ - Migrate to etherscan
  - Done!
