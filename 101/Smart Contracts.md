@@ -109,15 +109,15 @@ Scope & Permissions - Public and private Functions
 
 ___
 
-Tooling
+**Tooling**
 
 
-Web Environments
+Web Environments:
 
 [Remix](https://remix.ethereum.org/) - Web based solidity/Ethereum IDE
 
 
-CLIs -
+CLIs:
 
 Hardhat -  [Hardhat | Ethereum development environment for professionals by Nomic Foundation](https://hardhat.org/)
 
@@ -148,7 +148,7 @@ Tools:
 [Etherscan](https://etherscan.io/) - Endpoint 
 
 
-Simulations ->
+Simulations:
 
 [ETH.Build - Educational Sandbox For Web3](https://eth.build/)
 
@@ -156,8 +156,26 @@ Simulations ->
 Pragma (Version)
 ____
 General Rules - 
-A. No public user defined inputs when posible
-B.
+
+A. No public user defined inputs when possible
+
+B. No direct modification of state variables in view functions
+
+C. Proper error handling and exception management
+
+D. Gas optimization techniques
+
+E. Thorough testing and auditing before deployment
+
+F. Secure access control mechanisms
+
+G. Version control and documentation for smart contract code
+
+H. Regular code reviews and security assessments
+
+I. Compliance with applicable legal and regulatory requirements
+
+J. Continuous monitoring and maintenance of deployed contracts
 
 ____
 Static vs. Upgradable =>
