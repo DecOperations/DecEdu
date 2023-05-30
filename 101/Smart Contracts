@@ -1,1 +1,63 @@
 
+# Smart Contracts
+Hi! Welcome to DOTPI or the Developer Onboarding Training and Placement Initiative
+
+
+
+# Files
+
+ - [ ] What is a smart contract
+ - [ ] Popular Languages of smart contracts.
+ - [ ] Common Attacks
+ - [ ] ~~Writing and Deploying Smart Contracts~~
+
+StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+
+What is a smart contract?
+Self actuating o
+
+Common Attacks - 
+Overflow
+Underflow
+Rentrancy
+Oracle
+Front Running
+Poison Token
+
+Common Uses
+NFTs, Fungibles, Services, Oracles, Governance, Voting, Time Locks, Storage, Multi-Signature Wallets, and TCRs, 
+
+Standards -
+EIP & ERC 
+Common standards ->
+ERC-20 -> Fungible Standard -> Think Water
+ERC-721 - NFT standard  -> Think Snowflake
+ERC-1155 - Multi-Token Standard combines 721 and 20 into 1 can be used for things such as in game items -> In game might look like Item category of Currency (NFT type), Gold (type Erc-20), Silver (Currency ERC-20) ,
+EIP - Wallet signing
+
+Terms - 
+Audit -> Companies like a. b. c. that check the vulnerabilites of the code and dependecies, data inputs, user functions etc.
+
+Tooling
+Remix - Web based solidity gui
+Cli - Hardhat and Forge
+
+Openzeppelin - 
+wizard,
+defender,
+
+Chainlink v2 -> 
+VRF
+CRON
+
+
+Public and private Functions
+
+Pragma (Version)
+
+Initialization
+
+General Rules - 
+A. No public user defined inputs when posible
+
+Upgradeability
